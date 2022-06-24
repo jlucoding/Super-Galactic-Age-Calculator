@@ -19,7 +19,15 @@ describe('EarthAge', () => {
     expect(reusableEarthAge.marsAge()).toEqual(103);
   });
 
-  test('should correctly convert Earth age to jupiter age', () => {
+  test('should correctly convert Earth age to Jupiter age', () => {
     expect(reusableEarthAge.jupiterAge()).toEqual(652);
+  });
+
+  test('should correctly calculate how much longer user is expected to live on Earth', () => {
+    expect(reusableEarthAge.yearsLeftOnEarth()).toEqual(18);
+  });
+
+  test('should correctly calculate how much longer user is expected to live on Mercury', () => {
+    expect(reusableEarthAge.yearsLeftOnMercury()).toEqual();
   });
 });
