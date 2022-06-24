@@ -32,3 +32,7 @@ EarthAge.prototype.yearsLeftOnVenus = function() {
   return Math.round((avgLifeExpectancy - this.age) * 0.62);
 };
 
+EarthAge.prototype.yearsLeftOnMars = function() {
+  return Math.round((avgLifeExpectancy - this.age) * 1.88);
+};
+

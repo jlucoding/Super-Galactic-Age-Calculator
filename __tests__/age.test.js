@@ -34,4 +34,8 @@ describe('EarthAge', () => {
   test('should correctly calculate how much longer user is expected to live on Venus', () => {
     expect(reusableEarthAge.yearsLeftOnVenus()).toEqual(11);
   });
+
+  test('should correctly calculate how much longer user is expected to live on Mars', () => {
+    expect(reusableEarthAge.yearsLeftOnMars()).toEqual(33);
+  });
 });
