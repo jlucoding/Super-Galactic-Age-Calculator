@@ -22,8 +22,13 @@ EarthAge.prototype.jupiterAge = function() {
 
 EarthAge.prototype.yearsLeftOnEarth = function() {
   return Math.round(avgLifeExpectancy - this.age);
-}
+};
 
 EarthAge.prototype.yearsLeftOnMercury = function() {
   return Math.round((avgLifeExpectancy - this.age) * 0.24);
-}
+};
+
+EarthAge.prototype.yearsLeftOnVenus = function() {
+  return Math.round((avgLifeExpectancy - this.age) * 0.62);
+};
+
