@@ -2,9 +2,11 @@ import EarthAge from '../src/age.js';
 
 describe('EarthAge', () => {
   let reusableEarthAge;
+  let reusableOldEarthAge;
 
   beforeEach(() => {
     reusableEarthAge = new EarthAge(55);
+    reusableOldEarthAge = new EarthAge(78);
   });
 
   test('should correctly convert Earth age to Mercury age', () => {
@@ -25,23 +27,27 @@ describe('EarthAge', () => {
 
   test('should correctly calculate how much longer user is expected to live on Earth', () => {
     expect(reusableEarthAge.wholeYearsLeftOnEarth()).toEqual(18);
+    expect(reusableOldEarthAge.wholeYearsLeftOnEarth()).toEqual(5);
   });
 
   test('should correctly calculate how much longer user is expected to live on Mercury', () => {
     expect(reusableEarthAge.yearsLeftOnMercury()).toEqual(4);
+    expect(reusableOldEarthAge.yearsLeftOnMercury()).toEqual(1);
   });
 
   test('should correctly calculate how much longer user is expected to live on Venus', () => {
     expect(reusableEarthAge.yearsLeftOnVenus()).toEqual(11);
+    expect(reusableOldEarthAge.yearsLeftOnVenus()).toEqual(3);
   });
 
   test('should correctly calculate how much longer user is expected to live on Mars', () => {
     expect(reusableEarthAge.yearsLeftOnMars()).toEqual(33);
+    expect(reusableOldEarthAge.yearsLeftOnMars()).toEqual(10);
   });
 
   test('should correctly calculate how much longer user is expected to live on Jupiter', () => {
     expect(reusableEarthAge.yearsLeftOnJupiter()).toEqual(209);
-    console.log(reusableEarthAge);
+    expect(reusableOldEarthAge.yearsLeftOnJupiter()).toEqual(64);
   });
 
   
