@@ -1,8 +1,8 @@
-# (Application Name)
+# (Super Galactic Age Calculator)
 
 #### (Brief Description of Application)
 
-#### By Seung Lee
+#### By Jonathan Lu
 
 ## Technologies Used
 
@@ -37,11 +37,9 @@
 
 ## License
 
-[GNU](/LICENSE-GNU)
-
-Copyright (c) 2022 Seung Lee
+Copyright (c) 2022 Jonathan Lu
 
 ## Contact Information
 
-Seung Lee
-shl7@uw.edu
+Jonathan Lu
+jdlu.coding@gmail.com
