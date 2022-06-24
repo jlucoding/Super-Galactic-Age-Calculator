@@ -7,7 +7,7 @@ describe('EarthAge', () => {
     reusableEarthAge = new EarthAge(55);
   });
 
-  test('should correctly capture value of reusableEarthAge', () => {
-    expect().toEqual();
+  test('should correctly convert Earth age to Mercury age', () => {
+    expect(reusableEarthAge.mercuryAge()).toEqual(13.2);
   });
 });
