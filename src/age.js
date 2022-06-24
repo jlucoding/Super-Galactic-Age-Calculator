@@ -26,31 +26,62 @@ EarthAge.prototype.jupiterAge = function() {
   return Math.round(this.age * jupiterAgeEachEarthYear);
 };
 
-EarthAge.prototype.yearsLeftOnEarth = function() {
+EarthAge.prototype.determineIfPastLifeExpectancy = function() {
   if ((avgLifeExpectancy - this.age) < 0) {
-    livedLongerThanLifeExpectancyBy = this.age - avgLifeExpectancy;
-    return livedLongerThanLifeExpectancyBy;
+    return true;
   }
+  return false;
+};
+
+EarthAge.prototype.yearsLeftOnEarth = function() {
+  if (this.determineIfPastLifeExpectancy() === false) {
   return avgLifeExpectancy - this.age;
+  }
+};
+
+EarthAge.prototype.yearsPastOnEarth = function() {
+  if (this.determineIfPastLifeExpectancy() === true) {
+    return this.age - avgLifeExpectancy;
+  }
 };
 
 EarthAge.prototype.wholeYearsLeftOnEarth = function() {
   return Math.round(this.yearsLeftOnEarth());
 };
 
+EarthAge.prototype.wholeYearsPastOnEarth = function() {
+  return Math.round(this.yearsPastOnEarth());
+};
+
 EarthAge.prototype.yearsLeftOnMercury = function() {
   return Math.round(this.yearsLeftOnEarth() * mercuryAgeEachEarthYear);
+};
+
+EarthAge.prototype.yearsPastOnMercury = function() {
+  return Math.round(this.yearsPastOnEarth() * mercuryAgeEachEarthYear);
 };
 
 EarthAge.prototype.yearsLeftOnVenus = function() {
   return Math.round(this.yearsLeftOnEarth() * venusAgeEachEarthYear);
 };
 
+EarthAge.prototype.yearsPastOnVenus = function() {
+  return Math.round(this.yearsPastOnEarth() * venusAgeEachEarthYear);
+};
+
 EarthAge.prototype.yearsLeftOnMars = function() {
   return Math.round(this.yearsLeftOnEarth() * marsAgeEachEarthYear);
 };
 
+EarthAge.prototype.yearsPastOnMars = function() {
+  return Math.round(this.yearsPastOnEarth() * marsAgeEachEarthYear);
+};
+
 EarthAge.prototype.yearsLeftOnJupiter = function() {
   return Math.round(this.yearsLeftOnEarth() * jupiterAgeEachEarthYear);
+};
+
+EarthAge.prototype.yearsPastOnJupiter = function() {
+  return Math.round(this.yearsPastOnEarth() * jupiterAgeEachEarthYear);
 };
 

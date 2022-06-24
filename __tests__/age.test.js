@@ -25,30 +25,43 @@ describe('EarthAge', () => {
     expect(reusableEarthAge.jupiterAge()).toEqual(652);
   });
 
-  test('should correctly calculate how much longer user is expected to live on Earth or how long they have lived past life expectancy by on this planet', () => {
+  test('should correctly calculate how much longer user is expected to live on Earth', () => {
     expect(reusableEarthAge.wholeYearsLeftOnEarth()).toEqual(18);
-    expect(reusableOldEarthAge.wholeYearsLeftOnEarth()).toEqual(5);
   });
 
-  test('should correctly calculate how much longer user is expected to live on Mercury or how long they have lived past life expectancy by on this planet', () => {
+  test('should correctly calculate how long user has lived past life expectancy by on Earth', () => {
+    expect(reusableOldEarthAge.wholeYearsPastOnEarth()).toEqual(5);
+  });
+
+  test('should correctly calculate how much longer user is expected to live in Mercury years', () => {
     expect(reusableEarthAge.yearsLeftOnMercury()).toEqual(4);
-    expect(reusableOldEarthAge.yearsLeftOnMercury()).toEqual(1);
   });
 
-  test('should correctly calculate how much longer user is expected to live on Venus or how long they have lived past life expectancy by on this planet', () => {
+  test('should correctly calculate how long user has lived past life expectancy by in Mercury years', () => {
+    expect(reusableOldEarthAge.yearsPastOnMercury()).toEqual(1);
+  });
+
+  test('should correctly calculate how much longer user is expected to live in Venus years', () => {
     expect(reusableEarthAge.yearsLeftOnVenus()).toEqual(11);
-    expect(reusableOldEarthAge.yearsLeftOnVenus()).toEqual(3);
   });
 
-  test('should correctly calculate how much longer user is expected to live on Mars or how long they have lived past life expectancy by on this planet', () => {
+  test('should correctly calculate how long user has lived past life expectancy by in Venus years', () => {
+    expect(reusableOldEarthAge.yearsPastOnVenus()).toEqual(3);
+  });
+
+  test('should correctly calculate how much longer user is expected to live in Mars years', () => {
     expect(reusableEarthAge.yearsLeftOnMars()).toEqual(33);
-    expect(reusableOldEarthAge.yearsLeftOnMars()).toEqual(10);
   });
 
-  test('should correctly calculate how much longer user is expected to live on Jupiter or how long they have lived past life expectancy by on this planet', () => {
+  test('should correctly calculate how long user has lived past life expectancy by in Mars years', () => {
+    expect(reusableOldEarthAge.yearsPastOnMars()).toEqual(10);
+  });
+
+  test('should correctly calculate how much longer user is expected to live in Jupiter years', () => {
     expect(reusableEarthAge.yearsLeftOnJupiter()).toEqual(209);
-    expect(reusableOldEarthAge.yearsLeftOnJupiter()).toEqual(64);
   });
 
-  
+  test('should correctly calculate how long user has lived past life expectancy by in Jupiter years', () => {
+    expect(reusableOldEarthAge.yearsPastOnJupiter()).toEqual(64);
+  });
 });
