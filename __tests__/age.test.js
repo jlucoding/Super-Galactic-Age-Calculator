@@ -45,7 +45,7 @@ describe('EarthAge', () => {
     expect(reusableOldEarthAge.yearsLeftOnMars()).toEqual(10);
   });
 
-  test('should correctly calculate how much longer user is expected to live on Jupiter', () => {
+  test('should correctly calculate how much longer user is expected to live on Jupiter or how long they have lived past life expectancy by on this planet', () => {
     expect(reusableEarthAge.yearsLeftOnJupiter()).toEqual(209);
     expect(reusableOldEarthAge.yearsLeftOnJupiter()).toEqual(64);
   });
