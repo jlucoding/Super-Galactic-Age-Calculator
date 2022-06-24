@@ -24,7 +24,7 @@ describe('EarthAge', () => {
   });
 
   test('should correctly calculate how much longer user is expected to live on Earth', () => {
-    expect(reusableEarthAge.yearsLeftOnEarth()).toEqual(18);
+    expect(reusableEarthAge.wholeYearsLeftOnEarth()).toEqual(18);
   });
 
   test('should correctly calculate how much longer user is expected to live on Mercury', () => {
@@ -38,4 +38,11 @@ describe('EarthAge', () => {
   test('should correctly calculate how much longer user is expected to live on Mars', () => {
     expect(reusableEarthAge.yearsLeftOnMars()).toEqual(33);
   });
+
+  test('should correctly calculate how much longer user is expected to live on Jupiter', () => {
+    expect(reusableEarthAge.yearsLeftOnJupiter()).toEqual(209);
+    console.log(reusableEarthAge);
+  });
+
+  
 });
