@@ -1,39 +1,39 @@
-# (Super Galactic Age Calculator)
+# Super Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### The web application takes users' age on Earth and return their age in different planets' years with additional features.
 
 #### By Jonathan Lu
 
 ## Technologies Used
 
-* _HTML_
-* _CSS_
-* _Bootstrap_
-* _jQuery_
-* _npm_
-* _webpack_
-* _eslint_
-* _babel_
-* _html-loader_
-* _style-loader_
-* _css-loader_
-* _file-loader_
-* _jest_
+* HTML
+* CSS
+* Bootstrap
+* jQuery
+* npm
+* webpack
+* eslint
+* babel
+* html-loader
+* style-loader
+* css-loader
+* file-loader
+* jest
 
 ## Description
 
+The web application takes users' age on Earth and return their age in different planets' years. In addition, the web application will collect users' demographic information and inform them of number of the amount of years left till life expectancy in each planet's year. If users have lived past the life expectancy, the web application will inform users of the amount of years past life expectancy in each planet's year.
+
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Clone the project from my repository to your computer
+* Run NPM install
+* Input your age
+* Click submit and view your age in each planet's year and other information
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* None observed so far
 
 ## License
 
