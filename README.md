@@ -43,3 +43,7 @@ Copyright (c) 2022 Jonathan Lu
 
 Jonathan Lu
 jdlu.coding@gmail.com
+
+## Additional Information
+
+There was a period of time I have not committed. At least it may seem that way. I was actually having trouble with setting up workspace with Jest and other files so I was going through the homework lessons through the week to understand what went wrong. In the end, I deleted my repository which had my original commits, and then restarted the whole project by cloning another classmate's (Seung Lee's) template repo. I'm not sure if I had done it correctly. So far there is no bug found.
