@@ -10,11 +10,14 @@ describe('Person', () => {
     reusableOldPerson = new Person(78, "female");
     reusableNeutralGender = new Person(40, "");
     reusablePerson.ageCalc();
-    reusablePerson.lifeExpectancyCalc();
+    reusablePerson.lifeExpectancy();
+    reusablePerson.yearsLeftOrYearsPast();
     reusableOldPerson.ageCalc();
-    reusableOldPerson.lifeExpectancyCalc();
+    reusableOldPerson.lifeExpectancy();
+    reusableOldPerson.yearsLeftOrYearsPast();
     reusableNeutralGender.ageCalc();
-    reusableNeutralGender.lifeExpectancyCalc();
+    reusableNeutralGender.lifeExpectancy();
+    reusableNeutralGender.yearsLeftOrYearsPast();
   });
 
   test('should correctly convert Earth age to Mercury age', () => {
@@ -39,12 +42,19 @@ describe('Person', () => {
     expect(reusablePerson.lifeExpectancyOnEarth).toEqual(70.8);
   });
 
-  test('should correctly determine the life expectancy on planets other than Earth for a person', () => {
-    expect(reusablePerson.lifeExpectancyOnMercury).toEqual(17);
-    expect(reusablePerson.lifeExpectancyOnVenus).toEqual(44);
-    expect(reusablePerson.lifeExpectancyOnMars).toEqual(133);
-    expect(reusablePerson.lifeExpectancyOnJupiter).toEqual(797);
+  test('should correctly determine years left to live on all planets for a person', () => {
+    expect(reusablePerson.yearsLeftOnEarthWhole).toEqual(16);
+    expect(reusablePerson.yearsLeftOnMercury).toEqual(4);
+    expect(reusablePerson.yearsLeftOnVenus).toEqual(10);
+    expect(reusablePerson.yearsLeftOnMars).toEqual(30);
+    expect(reusablePerson.yearsLeftOnJupiter).toEqual(187);
   });
 
-
+  test('should correctly determine years lived past life expectancy on all planets for a person', () => {
+    expect(reusableOldPerson.yearsPastOnEarthWhole).toEqual(2);
+    expect(reusableOldPerson.yearsPastOnMercury).toEqual(1);
+    expect(reusableOldPerson.yearsPastOnVenus).toEqual(1);
+    expect(reusableOldPerson.yearsPastOnMars).toEqual(5);
+    expect(reusableOldPerson.yearsPastOnJupiter).toEqual(28);
+  });
 });
