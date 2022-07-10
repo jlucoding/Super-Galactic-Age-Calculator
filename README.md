@@ -28,7 +28,7 @@ The web application takes users' age on Earth and return their age in different 
 
 * Clone the project from my repository to your computer
 * Run NPM install
-* Input your age
+* Input your age and gender
 * Click submit and view your age in each planet's year and other information
 
 ## Known Bugs
